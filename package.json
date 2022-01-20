@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "privte":true,
+  "privte": true,
   "scripts": {
-   "start": "webpack serve",
-   "watch":"webpack --watch",
-   "build":"webpack"
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "build-dev": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,9 @@
     "url": "https://github.com/lmhale/Portfolio/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
