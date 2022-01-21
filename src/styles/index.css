@@ -1,3 +1,47 @@
-body {
-    background-color: orange;
+:root{
+    --pinky:rgba(238,174,202,.70);
+    --blau:rgba(148,187,233,.70);
 }
+
+@font-face {
+    src: url("https://www.fontspace.com/road-rage-font-f43310");
+    font-family: roadrage;
+}
+
+body{
+    margin:0;
+    padding:0; 
+    background: linear-gradient(95deg, var(--pinky)20%, var(--blau) 80% ); 
+}
+.app-component{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 300px;
+   
+}
+
+.header-component{
+    background-color:purple;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  
+}
+
+.sidebar-component{
+ height: 300px;
+ grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+   
+
+ .content-component {
+    grid-column-start: 2;
+    grid-row-start: 2;
+} 
+
+
+/*# sourceMappingURL=main.css.map*/
