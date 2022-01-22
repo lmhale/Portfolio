@@ -22,10 +22,14 @@ body {
 }
 
 .header-component {
+  background: url("dreamcity.jpg");
+  opacity: 0.8;
+  background-position: bottom;
+  background-size: cover;
   display: grid;
   font-family: Mochiy Pop P One;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 20px;
   justify-items: center;
   color: white;
   grid-column-start: 1;
@@ -34,27 +38,53 @@ body {
   grid-row-end: 2;
 }
 
+.header-component h1 {
+    z-index: 10px;
+}
+
 .sidebar-component {
   grid-column-start: 1;
   /* grid-column-end: 2; */
   grid-row-start: 2;
+  display: grid;
+  margin-left: 2px;
+  
 }
 
 .nav-bar {
-  position: fixed;
+z-index: 10;
+ padding: 2px;
+background-color: rgb(14, 21, 65, 0.85);
   display: grid;
-  grid-row-gap: 1px;
+  /* grid-row-gap: 1px; */
   grid-auto-rows: minmax(100px, auto);
   color: rgb(255, 155, 172);
   font-family: Mochiy Pop P One;
-  background-color: rgb(14, 21, 65, 0.9);
+  font-size: 18px;
+  justify-items: stretch;
+ justify-content: stretch;
+ text-align: center;
+
+  /* width: auto; */
+
 }
-.nav-bar div {
-  right: 0;
-  transform-origin: bottom right;
-  left: auto;
-  transform: rotate(90deg) translateY(100%);
+
+li{
+    border: outset;
+    list-style-type: none;
+    box-shadow: 2px 2px gray;
+    
 }
+ .nav-item {
+  
+    /* text-align: center; */
+}
+ li:hover {
+  background-color: whitesmoke;
+  transition: 1s;
+  cursor:pointer;
+  color: var(--blau);
+  }
 
 .content-component {
   grid-column-start: 2;

@@ -2,10 +2,10 @@ const SideBar = ()=> {
     return (
         <div className="sidebar-component">
          <nav className="nav-bar">
-            <div>About</div>
-            <div>Projects</div>
-            <div>Media</div>
-            <div>Contact</div>
+            <li className="nav-item">About</li>
+            <li className="nav-item">Projects</li>
+            <li className="nav-item">Media</li>
+            <li className="nav-item">Contact</li>
          </nav>
         </div>
        
