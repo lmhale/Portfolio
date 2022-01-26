@@ -1,15 +1,17 @@
 import React from "react";
 import Header from "./Header";
-import SideBar from "./SideBar";
+import NavBar from "./NavBar";
 import Content from "./Content";
-import styles from "../styles/index.css"
+import { AppContainer } from "./styles/Container.style";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+// import styles from "../styles/index.css"
 const App = () => {
     return (
-        <div className="app-component">
-        <Header className="header-component"/>
-        <SideBar className="sidebar-component"/>
-         <Content className="content-component" /> 
-        </div>
+        <AppContainer>
+        <Header/>
+        <NavBar/>
+         <Content  /> 
+         </AppContainer>
     )
 }
 

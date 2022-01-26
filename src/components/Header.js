@@ -1,8 +1,11 @@
+import { HeaderContainer, HeroImage } from "./styles/Header.style";
 const Header = () => {
+  
   return (
-   <div className="header-component">
+  <HeaderContainer>
+  <HeroImage/>
   <h1>Lauren M. Hale</h1>
-  </div>
+  </HeaderContainer>
   );
 };
 export default Header;
