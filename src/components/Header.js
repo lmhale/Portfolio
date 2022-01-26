@@ -1,10 +1,15 @@
-import { HeaderContainer, HeroImage } from "./styles/Header.style";
+import { HeaderContainer, HeaderTextBox, HeaderTextOne, HeaderTextTwo } from "./styles/Header.style";
 const Header = () => {
   
   return (
   <HeaderContainer>
-  <HeroImage/>
-  <h1>Lauren M. Hale</h1>
+  <HeaderTextBox>
+  <HeaderTextOne>
+  Lauren M. Hale 
+  </HeaderTextOne>
+  </HeaderTextBox>
+ 
+ 
   </HeaderContainer>
   );
 };

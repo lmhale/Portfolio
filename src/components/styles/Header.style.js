@@ -5,15 +5,40 @@ import styled from "styled-components";
     grid-column-start: 1;
     grid-column-end: 1; 
     width: 100vw;
-`;
-
-export const HeroImage = styled.image `
-  overflow: hidden;
-    background-position: center bottom;
-     /* background-image: url(${require(`./dreamcity.jpg`)});  */
    
-    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url(${require(`./dreamcity copy.jpg`)}); /* Chrome 10-25, Safari 5.1-6 */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    background-size: cover;
 `;
+export const HeaderTextBox = styled.div`
+  position: relative;
+  margin-left: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-top: 195px solid rgb(0,201,201,.85);
+  text-align: center;
+
+`;
+export const HeaderTextOne = styled.div`
+
+    font-family: 'Bungee Shade', cursive;
+    font-size: 22px;
+    color: pink;
+    left:50%;
+     top:50%;
+   -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+   transform: translate(-50%, -190%);
+   position:absolute;
+`;
+// export const HeaderTextTwo = styled.text`
+//     font-family: 'Bungee Shade', cursive;
+//     font-size: 40px;
+//     color: white;
+//     margin-left: 25%;
+//     margin-top: 0px;
+//     padding: 0px;
+//     text-align: left; 
+
+// `;
