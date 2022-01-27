@@ -7,8 +7,8 @@ export const AppContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   background: linear-gradient(
-      rgba(238, 174, 202, 0.8),
-      rgba(148, 187, 233, 0.8)
+      pink,
+      rgb(64,224,208, .7)
     ),
     url(${require(`./dreamcity copy.jpg`)}); /* Chrome 10-25, Safari 5.1-6 */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

@@ -6,25 +6,39 @@ import styled from "styled-components";
     /* grid-column-start: 1;
     grid-column-end: 2;  */
     width: 100vw;
+    z-index: 1;
    
 `;
 
 export const HeaderLogoDiv = styled.div`
     display: grid;
     align-content: center;
+    z-index: 3;
+    align-content: center;
+   justify-content: center;
 `;
 
-export const HeaderLogo = styled.div`
-    position: relative;
-    margin-left: 2px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 0;
-    height: 0;
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
-    border-top: 165px solid rgb(0,201,201,.85);
-    z-index: 2;
+export const HeaderLogo = styled.img`
+   
+    width: 38%;
+    margin-left: 10px;
+    border-radius: 4px;
+     border: 3px outset white; 
+     background-color: pink;
+     /* box-shadow: 1 4px 4px rgba(0,0,0,0.08); */
+     padding: 2px;;
+     :hover{
+      cursor: pointer;
+      box-shadow:0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 8px 16px rgba(0,0,0,0.07);
+             
+      border: 3px inset rgba(0,0,0,0,.9);
+      background-color: rgb(64,224,208, .8);
+      transition: 0.4s;
+     }
 `;
 export const HeaderTextOne = styled.div`
 

@@ -39,12 +39,12 @@ export const NavItem = styled.div`
 
 export const StyledLink = styled(Link)`
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     text-decoration: none;
     :hover{
    color: palevioletred;
-   
+   font-weight: bold;
     }
   
 `;
