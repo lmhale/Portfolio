@@ -6,7 +6,7 @@ import styled from "styled-components";
  width: 100%;
  padding: 0.5em 1em;
  display: flex;
- height: 64px;
+ height: 84px;
  position: fixed;
  align-items: center;
  background-color: #fff;
@@ -19,7 +19,7 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <HeaderBar>
-    <img src={Logo} alt="my name Logo" height="40" />
+    <img src={Logo} alt="my name Logo" height="80" />
     </HeaderBar>
   );
 };

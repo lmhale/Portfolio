@@ -7,9 +7,9 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     @media (min-width: 700px) {
         display: flex;
-        top: 64px;
+        top: 84px;
         position: relative;
-        height: calc(100% - 64px);
+        height: calc(100% - 84px);
         width: 100%;
         flex: auto;
         flex-direction: column;
@@ -17,7 +17,11 @@ const Wrapper = styled.div`
 `;
 const Main = styled.main`
     position: fixed;
-    height: calc(100% - 185px);
+    background: url(${require(`../assets/dreamcity.jpg`)});
+    filter: brightness(.8);
+    background-size: cover;
+    opacity: .9;
+    height: calc(100% - 105px);
     width: 100%;
     padding: 1em;
     overflow-y: scroll;
