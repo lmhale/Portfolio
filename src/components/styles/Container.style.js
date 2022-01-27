@@ -5,7 +5,7 @@ export const AppContainer = styled.div`
   height: 100vh;
   grid-template-rows: 1fr 2fr;
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 1fr 2fr;
   background: linear-gradient(
       rgba(238, 174, 202, 0.8),
       rgba(148, 187, 233, 0.8)

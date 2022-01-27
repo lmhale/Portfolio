@@ -1,14 +1,15 @@
-import { HeaderContainer, HeaderTextBox, HeaderTextOne, HeaderTextTwo } from "./styles/Header.style";
+import { HeaderContainer, HeaderLogo, HeaderLogoDiv,HeaderTextOne, HeaderTextTwo } from "./styles/Header.style";
 const Header = () => {
   
   return (
   <HeaderContainer>
-  <HeaderTextBox>
+  <HeaderLogoDiv>
+  <HeaderLogo>
   <HeaderTextOne>
   Lauren M. Hale 
   </HeaderTextOne>
-  </HeaderTextBox>
- 
+  </HeaderLogo>
+  </HeaderLogoDiv>
  
   </HeaderContainer>
   );

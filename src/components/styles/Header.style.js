@@ -2,23 +2,29 @@ import styled from "styled-components";
 
  export const HeaderContainer = styled.header`
     display: grid;   
-    grid-column-start: 1;
-    grid-column-end: 1; 
+    grid-template-columns: 1fr 2fr;
+    /* grid-column-start: 1;
+    grid-column-end: 2;  */
     width: 100vw;
    
 `;
-export const HeaderTextBox = styled.div`
-  position: relative;
-  margin-left: 2px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 0;
-  height: 0;
-  border-left: 120px solid transparent;
-  border-right: 120px solid transparent;
-  border-top: 195px solid rgb(0,201,201,.85);
-  text-align: center;
 
+export const HeaderLogoDiv = styled.div`
+    display: grid;
+    align-content: center;
+`;
+
+export const HeaderLogo = styled.div`
+    position: relative;
+    margin-left: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 165px solid rgb(0,201,201,.85);
+    z-index: 2;
 `;
 export const HeaderTextOne = styled.div`
 
