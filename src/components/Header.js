@@ -2,10 +2,14 @@ import { HeaderContainer, HeaderLogo, HeaderLogoDiv,HeaderTextOne, HeaderTextTwo
 import Logo from "../../src/Components/styles/Logo.png"
 const Header = () => {
   
+  function GoToHome(){
+    console.log("hommmee")
+  }
+
   return (
   <HeaderContainer>
   <HeaderLogoDiv>
-  <HeaderLogo  src={Logo} />
+  <HeaderLogo onClick={GoToHome} src={Logo} />
   </HeaderLogoDiv>
  
   </HeaderContainer>
