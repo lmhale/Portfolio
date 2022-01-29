@@ -3,8 +3,11 @@ import styled from "styled-components";
 
 const NameContainer = styled.div`
     display: flex;
-    position: absolute;
-     background-color: pink; 
+    position: relative;
+    align-self: flex-start;
+    margin-left: 20%;
+    margin-top: 10%;
+     /* background-color: pink;  */
      z-index: 12;
     color:white;
     /* height: 200px; */
@@ -13,7 +16,7 @@ const NameContainer = styled.div`
 
 const MyName = styled.h1`
   font-family: "Sacramento", sans-serif;
-  font-size: 46px;
+  font-size: 55px;
   font-weight: 400;
   color: #fff;
   text-shadow:
