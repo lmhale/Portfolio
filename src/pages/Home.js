@@ -7,10 +7,18 @@ const NameContainer = styled.div`
     align-self: flex-start;
     margin-left: 20%;
     margin-top: 10%;
-     /* background-color: pink;  */
+    background-color: black;
      z-index: 12;
     color:white;
-    /* height: 200px; */
+    border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.5em;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
 `;
 
 
@@ -18,6 +26,8 @@ const MyName = styled.h1`
   font-family: "Sacramento", sans-serif;
   font-size: 55px;
   font-weight: 400;
+  padding-left:4px;
+  padding-right: 4px;
   color: #fff;
   text-shadow:
     0 0 7px #fff,
