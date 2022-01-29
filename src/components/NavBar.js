@@ -2,10 +2,12 @@ import React from 'react';
 import { NavbarContainer, NavItem, StyledLink } from "./styles/NavBar.style";
 import { NavLink, Link } from "react-router-dom"; 
 import{ BsFillPersonBadgeFill} from "react-icons/bs";
+import contact_icon from "../assets/contact_icon.png"
+
 import styled from 'styled-components';
 const Nav = styled.nav`
     padding: 1em;
-    background: #f7f3e9;
+    background: lightblue;
     @media (max-width: 700px) {
         padding-top: 64px;
     }
@@ -16,7 +18,7 @@ const Nav = styled.nav`
         overflow-y: scroll;
     }
 `;
-const NavList = styled.ul`
+export const NavList = styled.ul`
     margin: 0;
     padding: 0;
     list-style: none;
@@ -25,10 +27,10 @@ const NavList = styled.ul`
         text-decoration: none;
         font-weight: bold;
         font-size: 1em;
-        color: #333;
+        color: white;
     }
     a:visited {
-        color: #333;
+        color: white;
     }
     a:hover,
     a:focus {
@@ -42,25 +44,11 @@ class NavBar extends React.Component{
     }
     render(){
         return (
-            // <NavbarContainer>
-            // <NavItem>
-            // <BsFillPersonBadgeFill size={30}/>
-            // <StyledLink to="/about" 
-            //   >About</StyledLink>
-            //   </NavItem>
-            //   <NavItem>
-            //   <BsFillPersonBadgeFill size={30}/>
-            // <StyledLink to="/projects">Projects</StyledLink>
-            // </NavItem>
-            // <NavItem>
-            // <BsFillPersonBadgeFill size={30}/>
-            // <StyledLink to="/contact">Contact</StyledLink>
-            // </NavItem>
-            // </NavbarContainer>
+           
             <Nav>
             <NavList>
                 <li>
-                    <Link to="/about">About</Link>
+                <img src={contact_icon} alt="my name Logo" height="40" />  <Link to="/about">About</Link>
                 </li>
                 <li>
                     <Link to="/projects">Projects</Link>

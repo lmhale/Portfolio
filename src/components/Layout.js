@@ -21,15 +21,14 @@ const Main = styled.main`
     filter: brightness(.8);
     background-size: cover;
     opacity: .9;
-    height: calc(100% - 105px);
+    height: calc(100% - 84px);
     width: 100%;
     padding: 1em;
     overflow-y: scroll;
     @media (min-width: 700px) {
         flex: 1;
-        margin-left: 260px;
         height: calc(100% - 64px);
-        width: calc(100% - 260px);
+       
     }
 `;
 
@@ -41,7 +40,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
         <Header />
         <Wrapper >
-            <NavBar />
+           
             <Main>{children}</Main>
         </Wrapper>
     </React.Fragment>
