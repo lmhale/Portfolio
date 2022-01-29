@@ -7,41 +7,70 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     @media (min-width: 700px) {
         display: flex;
-        top: 84px;
         position: relative;
-        height: calc(100% - 84px);
+        height: 100%;
         width: 100%;
         flex: auto;
         flex-direction: column;
     }
 `;
 const Main = styled.main`
+ 
     position: fixed;
     background: url(${require(`../assets/dreamcity.jpg`)});
-    filter: brightness(.8);
     background-size: cover;
-    opacity: .9;
-    height: calc(100% - 84px);
-    width: 100%;
-    padding: 1em;
+    flex-flow: column nowrap;
+   justify-content: center;
+    height: 100%;
+    margin-left: 210px;
+    width:100%;
+    top:0;
+    left:0;
     overflow-y: scroll;
     @media (min-width: 700px) {
         flex: 1;
-        height: calc(100% - 64px);
+        /* height: calc(100% - 64px); */
        
+    }
+
+    ::before {
+     content: "";
+      background-image: url(${require(`../assets/dreamcity.jpg`)});
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+     filter: brightness(.8);
     }
 `;
 
+const ContentContainer = styled.div `
+  
+    display: flex;
+    flex-basis:auto;
+    height:100vh;
+
+    margin: 10px;
+    width: calc(100% - 220px);
+
+    background-color: rgba(0,0,0,.8);
+`;
 
 
 
 const Layout = ({ children }) => {
     return (
     <React.Fragment>
-        <Header />
         <Wrapper >
-           
-            <Main>{children}</Main>
+           <NavBar/>
+            <Main>
+            <ContentContainer>
+                {children}
+            </ContentContainer>
+            </Main>
         </Wrapper>
     </React.Fragment>
     );

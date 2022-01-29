@@ -7,26 +7,26 @@ import contact_icon from "../assets/contact_icon.png"
 import styled from 'styled-components';
 const Nav = styled.nav`
     padding: 1em;
-    background: lightblue;
+    background: black;
     @media (max-width: 700px) {
         padding-top: 64px;
     }
     @media (min-width: 700px) {
         position: fixed;
-        width: 220px;
-        height: calc(100% - 64px);
+        width: 200px;
+        height: 100%;
         overflow-y: scroll;
     }
 `;
 export const NavList = styled.ul`
     margin: 0;
-    padding: 0;
+    padding-bottom: 2px;
     list-style: none;
     line-height: 2;
     a {
         text-decoration: none;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 18px;
         color: white;
     }
     a:visited {
@@ -48,7 +48,7 @@ class NavBar extends React.Component{
             <Nav>
             <NavList>
                 <li>
-                <img src={contact_icon} alt="my name Logo" height="40" />  <Link to="/about">About</Link>
+               <Link to="/about">About</Link>
                 </li>
                 <li>
                     <Link to="/projects">Projects</Link>

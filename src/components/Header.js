@@ -67,6 +67,7 @@ const MyName = styled.h1`
   
   }
     }
+  }
 `;
 
 export const LeftBox = styled.div`
@@ -99,27 +100,11 @@ export const NavList = styled.ul`
 
 const Header = () => {
   return (
-    <HeaderBar>
-    <LeftBox>
-    <img src={Logo} alt="my name Logo" height="75" />
-    <MyName>Lauren M Hale </MyName>
-    </LeftBox>
+  
+    <div>
    
-
-            <NavList>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                <Link to="/contact">Contact</Link>
-               </li>
-            </NavList>
-     
-          
-    </HeaderBar>
+    </div>
+   
   );
 };
 export default Header;
