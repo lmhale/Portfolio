@@ -6,17 +6,19 @@ import contact_icon from "../assets/contact_icon.png"
 
 import styled from 'styled-components';
 const Nav = styled.nav`
+display: flex;
     padding: 1em;
     background: black;
-    @media (max-width: 700px) {
+    top:10px;
+    /* @media (max-width: 700px) {
         padding-top: 64px;
-    }
-    @media (min-width: 700px) {
+    } */
+     @media (min-width: 700px) {
         position: fixed;
         width: 200px;
         height: 100%;
-        overflow-y: scroll;
-    }
+    
+    } 
 `;
 export const NavList = styled.ul`
     margin: 0;
@@ -34,7 +36,7 @@ export const NavList = styled.ul`
     }
     a:hover,
     a:focus {
-        color: #0077cc;
+        color:rgba(238, 174, 202, 0.9) ;
     }
 `;
 

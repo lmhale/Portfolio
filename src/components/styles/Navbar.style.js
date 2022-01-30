@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 export const NavbarContainer = styled.nav`
     z-index: 3;
     display: grid;
+    position: fixed;
     background-color: black;
     grid-row-start: 2;
     grid-column-start: 1;

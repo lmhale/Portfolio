@@ -3,8 +3,11 @@ import styled from "styled-components";
 
 const NameContainer = styled.div`
     display: flex;
-    position: relative;
+    flex-direction: column;
+    /* position: relative; */
     align-self: flex-start;
+    align-items: center;
+    font-family: "Sacramento", sans-serif;
     margin-left: 20%;
     margin-top: 10%;
     background-color: black;
@@ -19,17 +22,7 @@ const NameContainer = styled.div`
             0 0 0.8rem #bc13fe,
             0 0 2.8rem #bc13fe,
             inset 0 0 1.3rem #bc13fe; 
-`;
-
-
-const MyName = styled.h1`
-  font-family: "Sacramento", sans-serif;
-  font-size: 55px;
-  font-weight: 400;
-  padding-left:4px;
-  padding-right: 4px;
-  color: #fff;
-  text-shadow:
+    text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
@@ -39,6 +32,18 @@ const MyName = styled.h1`
     0 0 102px #bc13fe,
     0 0 151px #bc13fe;
 
+`;
+
+
+const MyName = styled.h1`
+    
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 0;
+  /* padding-left:4px;
+  padding-right: 4px; */
+
+  
     :hover{
       animation: pulsate 1.2s infinite alternate; 
       @keyframes pulsate {
@@ -74,11 +79,18 @@ const MyName = styled.h1`
   }
 `;
 
+const SubTitle = styled.h2 `
+        font-size: 30px;
+        margin-top: 0;
+        padding-top: 0;
+`;
 
 const Home = () => {
     return (
         <NameContainer>
-            <MyName>Lauren M. Hale</MyName>
+            <MyName>Lauren M. Hale </MyName>
+            <SubTitle>Software Engineer</SubTitle> 
+          
             </NameContainer>
     )
 }
