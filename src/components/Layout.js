@@ -29,7 +29,8 @@ const Main = styled.main`
 const ContentContainer = styled.div `
    border: 2px solid green;
    background-color: green;
-   flex-basis: calc(100% - 280px)
+   flex-basis: calc(100% - 280px);
+  
 `;
 
 
