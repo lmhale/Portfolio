@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
  
  const HeaderBar = styled.header`
- justify-content: space-between;
- align-items: center;
+ /* justify-content: space-between; */
+ /* align-items: center;
  width: 100%;
  padding: 0.5em 1em;
  display: flex;
@@ -16,7 +16,7 @@ import styled from "styled-components";
   padding-right: 10px;
  background-color: black;
  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
- z-index: 1;
+ z-index: 1; */
 
 `;
 
@@ -70,10 +70,7 @@ const MyName = styled.h1`
   }
 `;
 
-export const LeftBox = styled.div`
- display: flex;
 
-`;
 export const NavList = styled.ul`
     font-family: 'Raleway';
     display: flex;

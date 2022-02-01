@@ -2,16 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const NameContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    /* position: relative; */
-    align-self: flex-start;
-    align-items: center;
+ 
     font-family: "Sacramento", sans-serif;
-    margin-left: 20%;
-    margin-top: 10%;
+ 
     background-color: black;
-     z-index: 12;
+
     color:white;
     border: 0.2rem solid #fff;
   border-radius: 2rem;
@@ -39,9 +34,7 @@ const MyName = styled.h1`
     
   font-size: 45px;
   font-weight: 400;
-  margin-bottom: 0;
-  /* padding-left:4px;
-  padding-right: 4px; */
+
 
   
     :hover{
@@ -79,19 +72,18 @@ const MyName = styled.h1`
   }
 `;
 
-const SubTitle = styled.h2 `
-        font-size: 30px;
-        margin-top: 0;
-        padding-top: 0;
-`;
+
 
 const Home = () => {
     return (
-        <NameContainer>
-            <MyName>Lauren M. Hale </MyName>
-            <SubTitle>Software Engineer</SubTitle> 
+        // <NameContainer>
+        //     <MyName>Lauren M. Hale </MyName>
+            
           
-            </NameContainer>
+        //     </NameContainer>
+        <div>
+        Home
+        </div>
     )
 }
 export default Home;

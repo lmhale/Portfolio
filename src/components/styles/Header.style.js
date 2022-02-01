@@ -1,22 +1,15 @@
 import styled from "styled-components";
 
  export const HeaderContainer = styled.header`
-    display: grid;   
+    /* display: grid;   
     grid-template-columns: 1fr 2fr;
     /* grid-column-start: 1;
     grid-column-end: 2;  */
-    width: 100vw;
-    z-index: 1;
-   
+    /* width: 100vw;
+    z-index: 1; */
+
 `;
 
-export const HeaderLogoDiv = styled.div`
-    display: grid;
-    align-content: center;
-    z-index: 3;
-    align-content: center;
-   justify-content: center;
-`;
 
 export const HeaderLogo = styled.img`
    
