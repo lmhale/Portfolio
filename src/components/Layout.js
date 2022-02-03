@@ -12,9 +12,9 @@ const Wrapper = styled.div `
  
 `;
 const Main = styled.main`
+  padding: 5px;
   display: flex;
   flex-direction: row;
-  border: 2px solid red;
   height:100%;
   background: url(${require(`../assets/dreamcity.jpg`)});
   background-size: cover; 
@@ -27,10 +27,15 @@ const Main = styled.main`
     `;
 
 const ContentContainer = styled.div `
-   border: 2px solid green;
-   background-color: green;
-   flex-basis: calc(100% - 280px);
-  
+    display: flex;
+   flex: 5;
+   margin-left: 10px;
+   justify-content: space-evenly;
+   align-items: flex-start;
+   align-content: center;
+   padding-top: 5px;
+    
+
 `;
 
 
@@ -42,8 +47,7 @@ const Layout = ({ children }) => {
             <Main>
             <NavBar/>
             <ContentContainer>
-            content
-                {children}
+               {children}
             </ContentContainer>
             </Main>
             

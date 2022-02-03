@@ -6,36 +6,89 @@ import contact_icon from "../assets/contact_icon.png"
 
 import styled from 'styled-components';
 const Nav = styled.nav`
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
     padding: 5px;
     background-color: black;
-    flex-basis: 250px;
-   
+    border-radius: 2px;
+    flex:1;
 `;
 const LogoContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    font-size: 40px;
-    flex-basis: 180px;
-     /* margin:10px 0 10px 0;  */
-    margin:5px
+    background-color: black;
+    font-size: 38px;
+    border-radius: 2px;
+    flex:1;
+    margin:5px;
+    border: 0.1px solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+`;
+const MyName = styled.h1`
+font-family: "Sacramento", sans-serif;
+    color: white;
+  font-size: 35px;
+  font-weight: 400;
+  cursor: pointer;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+
+    :hover{
+      animation: pulsate 1.2s infinite alternate; 
+      @keyframes pulsate {
     
+    100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #bc13fe,
+        0 0 80px #bc13fe,
+        0 0 90px #bc13fe,
+        0 0 100px #bc13fe,
+        0 0 150px #bc13fe;
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #bc13fe,
+      0 0 45px #bc13fe,
+      0 0 55px #bc13fe,
+      0 0 70px #bc13fe,
+      0 0 80px #bc13fe;
+  
+  }
+    }
+  }
 `;
 export const NavList = styled.ul`
     display: flex;
     flex-direction: column;
+    flex:3;
     align-items: center;
     margin:5px;
     justify-content: space-around;
-    flex-basis: calc(100% - 210px);
+    
    background: black;
     list-style: none;
-    border: 3px solid purple;
-    /* line-height: 2; */
     a {
         text-decoration: none;
         font-weight: bold;
@@ -47,7 +100,15 @@ export const NavList = styled.ul`
     }
     a:hover,
     a:focus {
-        color:rgba(238, 174, 202, 0.9) ;
+        text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
     }
 `;
 
@@ -59,7 +120,8 @@ class NavBar extends React.Component{
         return (
            
             <Nav>
-            <LogoContainer>L.M.H</LogoContainer>
+            <LogoContainer><MyName>L.M.H</MyName>
+            </LogoContainer>
             <NavList>
                 <li>
                <Link to="/about">About</Link>
