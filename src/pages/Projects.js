@@ -6,17 +6,22 @@ import isignCover from "../assets/isign_cover.png";
 const Project = styled.div`
     display: flex;
     color:white;
-    flex-basis: 260px;
-
+    flex-basis: 235px;
     padding: 5px;
-    /* margin:5px; */
-    justify-content: space-evenly;
-    align-items: flex-start;
+    margin:5px;
+   justify-content: space-evenly; 
+    /* align-items: flex-start;   */
 
     flex-direction: column;
     background: rgba(0, 0, 0, 0.5);
     z-index: 3;
     border: 1px solid black;
+    border-radius: .5%;
+    :hover{
+        transition: top ease .4s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        margin-top: -3px;
+    }
 `;
  
 const card_data = [

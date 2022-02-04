@@ -11,17 +11,16 @@ const Wrapper = styled.div `
  
 `;
 const Main = styled.main`
-  padding: 5px;
+  padding: 6px;
   display: flex;
   flex-direction: row;
   height:100%;
   background: url(${require(`../assets/dreamcity.jpg`)});
   background-size: cover; 
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   z-index: -1;
- 
-  justify-content: space-between;
-  
+  overflow: auto;
+scroll-behavior: smooth;
        
     `;
 
@@ -30,9 +29,11 @@ const ContentContainer = styled.div `
    flex: 6;
    margin-left: 10px;
    justify-content: space-evenly;
-   align-items: center;
-   align-content: center;
-
+  margin-top: 2.5%;
+  align-items: flex-start;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
     
 
 `;
