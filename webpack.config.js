@@ -21,9 +21,14 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins:[new MiniCssExtractPlugin()],
+
   resolve:{
       extensions:[".js", ".jsx"],
   },
@@ -31,5 +36,6 @@ module.exports = {
   devServer: {
     static: "./dist",
     hot:true,
+    historyApiFallback: true,
   },
 };
