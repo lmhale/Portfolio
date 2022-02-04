@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavbarContainer, NavItem, StyledLink } from "./styles/NavBar.style";
 import { NavLink, Link } from "react-router-dom"; 
 import{ BsFillPersonBadgeFill} from "react-icons/bs";
 import contact_icon from "../assets/contact_icon.png"

@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import NavBar from './NavBar';
 
 import styled from 'styled-components';
@@ -27,13 +26,13 @@ const Main = styled.main`
     `;
 
 const ContentContainer = styled.div `
-    display: flex;
-   flex: 5;
+  display: flex;
+   flex: 6;
    margin-left: 10px;
    justify-content: space-evenly;
-   align-items: flex-start;
+   align-items: center;
    align-content: center;
-   padding-top: 5px;
+
     
 
 `;
