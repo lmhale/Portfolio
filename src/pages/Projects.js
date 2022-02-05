@@ -62,9 +62,8 @@ const Projects =()=> {
         
       {card_data.map(card => {
         return (
-            <Project>
+            <Project key={card.id}>
             <Card
-            key={card.id}
             title={card.title}
             description={card.description}
             imgSrc={card.img_src}

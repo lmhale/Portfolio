@@ -8,7 +8,8 @@ const Nav = styled.nav`
     display: flex;
     flex-direction: column;
     padding: 5px;
-    background-color: black;
+    background:rgba(10,64,116,.95); 
+   
     border-radius: 2px;
     flex:1;
 `;
@@ -17,7 +18,7 @@ const LogoContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
     font-size: 38px;
     border-radius: 2px;
     flex:1;
@@ -25,14 +26,14 @@ const LogoContainer = styled.div`
     border: 0.1px solid #fff;
     box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
-            0 0 2rem #bc13fe,
-            0 0 0.8rem #bc13fe,
-            0 0 2.8rem #bc13fe,
-            inset 0 0 1.3rem #bc13fe; 
+            0 0 2rem #ff1aff,
+            0 0 0.8rem #ff1aff,
+            0 0 2.8rem #ff1aff,
+            inset 0 0 1.3rem #ff1aff; 
 `;
 const MyName = styled.h1`
 font-family: "Sacramento", sans-serif;
-    color: white;
+    color: whitesmoke;
   font-size: 35px;
   font-weight: 400;
   cursor: pointer;
@@ -40,11 +41,11 @@ font-family: "Sacramento", sans-serif;
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px #bc13fe,
-    0 0 82px #bc13fe,
-    0 0 92px #bc13fe,
-    0 0 102px #bc13fe,
-    0 0 151px #bc13fe;
+    0 0 42px #ff1aff,
+    0 0 82px #ff1aff,
+    0 0 92px #ff1aff,
+    0 0 102px #ff1aff,
+    0 0 151px #ff1aff;
 
     :hover{
       animation: pulsate 1.2s infinite alternate; 
@@ -55,11 +56,11 @@ font-family: "Sacramento", sans-serif;
         0 0 4px #fff,
         0 0 11px #fff,
         0 0 19px #fff,
-        0 0 40px #bc13fe,
-        0 0 80px #bc13fe,
-        0 0 90px #bc13fe,
-        0 0 100px #bc13fe,
-        0 0 150px #bc13fe;
+        0 0 40px #ff1aff,
+        0 0 80px #ff1aff,
+        0 0 90px #ff1aff,
+        0 0 100px #ff1aff,
+        0 0 150px #ff1aff;
     }
     
     0% {
@@ -68,11 +69,11 @@ font-family: "Sacramento", sans-serif;
       0 0 2px #fff,
       0 0 4px #fff,
       0 0 6px #fff,
-      0 0 10px #bc13fe,
-      0 0 45px #bc13fe,
-      0 0 55px #bc13fe,
-      0 0 70px #bc13fe,
-      0 0 80px #bc13fe;
+      0 0 10px #ff1aff,
+      0 0 45px #ff1aff,
+      0 0 55px #ff1aff,
+      0 0 70px #ff1aff,
+      0 0 80px #ff1aff;
   
   }
     }
@@ -86,13 +87,13 @@ export const NavList = styled.ul`
     margin:5px;
     justify-content: space-around;
     
-   background: black;
+   /* background: black; */
     list-style: none;
     a {
         text-decoration: none;
         font-weight: bold;
         font-size: 20px;
-        color: white;
+        color: whitesmoke;
     }
     a:visited {
         color: white;
@@ -103,11 +104,11 @@ export const NavList = styled.ul`
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px #bc13fe,
-    0 0 82px #bc13fe,
-    0 0 92px #bc13fe,
-    0 0 102px #bc13fe,
-    0 0 151px #bc13fe;
+    0 0 42px #ff1aff,
+    0 0 82px #ff1aff,
+    0 0 92px #ff1aff,
+    0 0 102px #ff1aff,
+    0 0 151px #ff1aff;
     }
 `;
 

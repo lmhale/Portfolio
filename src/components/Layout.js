@@ -19,7 +19,7 @@ const Main = styled.main`
   background-size: cover; 
   /* justify-content: flex-start; */
   z-index: -1;
-  overflow: auto;
+  overflow-y: auto;
 scroll-behavior: smooth;
        
     `;
