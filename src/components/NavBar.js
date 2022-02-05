@@ -8,10 +8,14 @@ const Nav = styled.nav`
     display: flex;
     flex-direction: column;
     padding: 5px;
-    background:rgba(10,64,116,.95); 
-   
-    border-radius: 2px;
+    /* background:rgba(10,64,116,.9);  */
+    background:rgba(25,25,30,.95); 
+    border-radius: 3px;
     flex:1;
+    /* box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2); */
+    :hover{
+        box-shadow: 0 0 11px rgba(33,33,33,.8); 
+    }
 `;
 const LogoContainer = styled.div`
     display: flex;
