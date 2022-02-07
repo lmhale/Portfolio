@@ -41,9 +41,10 @@ app.post("/send_mail", cors(), async (req, res) => {
 	})
 })
 
-
-  app.get('/', (req, res) => {
-	res.send('Successful response.');
-  });
+app.get('/', (req, res) => {
+	res.send('Hello World!')
+  })
   
-  app.listen(4000, () => console.log('Example app is listening on port 4000.'));
+  app.listen(port, () => {
+	console.log(`Example app listening on port ${port}`)
+  })

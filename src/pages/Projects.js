@@ -6,13 +6,14 @@ import isignCover from "../assets/isign_cover.png";
 const Project = styled.div`
     display: flex;
     color:white;
-    flex-basis: 235px; 
+    flex-basis: 230px; 
     padding: 8px;
+  
     /* margin:1px; */
    margin-right: 30px;
   
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.3);
+    /* flex-direction: row; */
+    /* background: rgba(0, 0, 0, 0.3); */
     z-index: 3;
     /* border: 1px solid black; */
     border-radius: .5%;
