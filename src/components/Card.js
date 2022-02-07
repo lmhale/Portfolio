@@ -6,13 +6,14 @@ const StyledContainer = styled.div`
 
 display: flex;
 padding:5px;
-background: radial-gradient(circle, rgba(87,79,154,9) 0%, rgba(1,62,116,1) 100%);
+/* background: radial-gradient(circle, rgba(87,79,154,9) 0%, rgba(1,62,116,1) 100%); */
+ background:rgba(25,25,30,.95); 
 flex-direction: column;
 
 justify-content: space-around;
 margin:2.5px;
 
-border: 2px solid rgba(1,62,116,1);
+border: 2px solid pink;
 border-radius: .5%;
   `
 
@@ -62,7 +63,7 @@ const ActionButton = styled.button`
 ` 
 const StyledPhoto = styled.img`
   width: 100%;
-  height: 100%; 
+  /* height: 120px;  */
   object-fit: cover;
   margin-bottom: 5px;
 

@@ -27,7 +27,7 @@ scroll-behavior: smooth;
 
 const ContentContainer = styled.div `
   display: flex;
-   flex: 6;
+   flex: 8;
   margin-left:10px;
   margin-top: .5%;
   align-items: flex-start;

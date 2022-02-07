@@ -23,10 +23,11 @@ const LogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     /* background-color: black; */
-    font-size: 38px;
+   
     border-radius: 2px;
     flex:1;
-    margin:5px;
+    padding-left:6px;
+    padding-right:6px;
     border: 0.1px solid #fff;
     box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
@@ -38,7 +39,7 @@ const LogoContainer = styled.div`
 const MyName = styled.h1`
 font-family: "Sacramento", sans-serif;
     color: whitesmoke;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   cursor: pointer;
   text-shadow:
