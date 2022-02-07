@@ -14,8 +14,7 @@ app.use(cors())
 app.post("/send_mail", cors(), async (req, res) => {
 	let { text } = req.body
 	const transport = nodemailer.createTransport({
-		host: process.env.MAIL_HOST,
-		port: process.env.MAIL_PORT,
+		service:'gmail',
 		auth: {
 			user: process.env.MAIL_USER,
 			pass: process.env.MAIL_PASS
@@ -23,9 +22,9 @@ app.post("/send_mail", cors(), async (req, res) => {
 	})
 
 	await transport.sendMail({
-		from: process.env.MAIL_FROM,
-		to: "test@test.com",
-		subject: "test email",
+		from: "myportfoliosite.com",
+		to: "lauren.m.hale7@gmail.com",
+		subject: "New Portfolio Message",
 		html: `<div className="email" style="
         border: 1px solid black;
         padding: 20px;
@@ -41,9 +40,7 @@ app.post("/send_mail", cors(), async (req, res) => {
     `
 	})
 })
-app.get('/', (req, res) => {
-	res.send('Hello World!')
-  })
+
 
   app.get('/', (req, res) => {
 	res.send('Successful response.');
