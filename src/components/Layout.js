@@ -15,22 +15,23 @@ const Main = styled.main`
   display: flex;
   flex-direction: row;
   height:100%;
-  background: url(${require(`../assets/dreamcity.jpg`)});
+  background:linear-gradient(to top, rgba(255,182,193,.3),rgba(0, 0, 80, 1)), url(${require(`../assets/dreamcity.jpg`)});
+  
   background-size: cover; 
-  /* justify-content: flex-start; */
+ 
   z-index: -1;
   overflow-y: auto;
 scroll-behavior: smooth;
-       
+
     `;
 
 const ContentContainer = styled.div `
   display: flex;
    flex: 6;
-   margin-left: 10px;
-   justify-content: space-evenly;
-  margin-top: 2.5%;
+  margin-left:10px;
+  margin-top: .5%;
   align-items: flex-start;
+  justify-content: center;
   @media (max-width: 500px) {
     flex-direction: column;
   }

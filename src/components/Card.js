@@ -6,7 +6,7 @@ const StyledContainer = styled.div`
 
 display: flex;
 padding:5px;
-background: radial-gradient(circle, rgba(87,79,154,1) 0%, rgba(1,62,116,1) 100%);
+background: radial-gradient(circle, rgba(87,79,154,9) 0%, rgba(1,62,116,1) 100%);
 flex-direction: column;
 
 justify-content: space-around;
@@ -18,19 +18,20 @@ border-radius: .5%;
 
 const Title = styled.h2`
 
-  color: #fff;
+  color:whitesmoke;
   font-weight: 300;
   text-align: center; 
-  
+
   @media (max-width: 500px) {
     font-size: 1rem;
   }
 `;
 const Description = styled.p`
-  color: #fff;
+
+  color: whitesmoke;
   font-weight: 300;
   padding:3px;
-  @media (max-width: 500px) {
+  @media (max-width: 300px) {
     font-size: 0.75rem;
   }
  
