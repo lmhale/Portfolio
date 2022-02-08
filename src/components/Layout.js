@@ -20,8 +20,8 @@ const Main = styled.main`
   background-size: cover; 
  
   z-index: -1;
-  overflow-y: auto;
-scroll-behavior: smooth;
+  overflow-y: auto; 
+  scroll-behavior: smooth;
 
     `;
 
@@ -30,12 +30,12 @@ const ContentContainer = styled.div `
    flex: 8;
   margin-left:10px;
   margin-top: .5%;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   @media (max-width: 500px) {
     flex-direction: column;
   }
-    
+  background-color: rgba(0,0,0,.3);
 
 `;
 
