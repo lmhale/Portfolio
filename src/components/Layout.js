@@ -20,22 +20,26 @@ const Main = styled.main`
   background-size: cover; 
  
   z-index: -1;
-  overflow-y: auto;
-scroll-behavior: smooth;
+  overflow-y: auto; 
+  scroll-behavior: smooth;
 
     `;
 
 const ContentContainer = styled.div `
   display: flex;
    flex: 8;
-  margin-left:10px;
+   /* height: 100%; */
+   justify-content: center;
+   align-items: center;
+   border: 2px solid green;
+  /* margin-left:10px;
   margin-top: .5%;
-  align-items: flex-start;
-  justify-content: center;
+
+
   @media (max-width: 500px) {
     flex-direction: column;
   }
-    
+  background-color: rgba(0,0,0,.3); */
 
 `;
 
@@ -47,9 +51,10 @@ const Layout = ({ children }) => {
             <Wrapper>
             <Main>
             <NavBar/>
-            <ContentContainer>
+           <ContentContainer>
                {children}
             </ContentContainer>
+       
             </Main>
             
         
