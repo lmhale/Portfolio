@@ -9,7 +9,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log("form",form)
     emailjs.sendForm(service_email,template_id , form.current, user_id)
       .then((result) => {
           console.log(result.text);
@@ -20,16 +20,10 @@ const Contact = () => {
   };
 
   return (
-    // <form ref={form} onSubmit={sendEmail}>
-    //   <label>Name</label>
-    //   <input type="text" name="name" />
-    //   <label>Email</label>
-    //   <input type="email" name="email" />
-    //   <label>Message</label>
-    //   <textarea name="message" />
-    //   <input type="submit" value="Send" />
-    // </form>
-    <Form/>
+    <>
+    <Form ref={form} onSubmit={sendEmail}/>
+    </>
+  
   );
 };
 

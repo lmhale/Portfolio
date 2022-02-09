@@ -14,13 +14,13 @@ const FormContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-/* height: 100vh; */
+ height: 100vh; 
 padding: 0 20pc;
 
 `;
 const StyledForm = styled.form`
      width: 100%;
-     max-width: 700px;
+     max-width: 400px;
      padding: 40px;
      background-color: #fff;
      border-radius: 10px;
@@ -58,21 +58,22 @@ const StyledHeader = styled.h2`
     text-align: center;
 `;
 
-const Form = () => {
-    return(
+const Form = React.forwardRef((props,ref) => {
+    return (
         <FormContainer>
-        <StyledForm>
+        <StyledForm ref={ref} {...props} >
         <StyledHeader>Contact Form</StyledHeader>
-        <label>Name</label>
-       <StyledInput/>
-       <label>Email</label>
-       <StyledInput/>
-        <label>Message</label>
-        <StyledTextArea/>
-        <StyledButton>Send</StyledButton>
+        <label htmlFor="name">Name</label>
+       <StyledInput type="text" name="name" />
+       <label htmlFor="email">Email</label>
+       <StyledInput type="email" name="email" />
+        <label htmlFor="message">Message</label>
+        <StyledTextArea type="text" name="message"/>
+        <StyledButton value="Send" type="submit">Send</StyledButton>
         </StyledForm>
         </FormContainer>
-    )    
-}
+    )
+});    
+
 
 export default Form
